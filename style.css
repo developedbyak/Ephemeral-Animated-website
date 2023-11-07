@@ -51,16 +51,22 @@ body {
 
 #hero {
     width: 100%;
-    height: 100px;
     margin-top: 12vw;
     padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.hero-l {
-    width: 10vw;
+.hero-l h2 {
+    font-size: 2vw;
+}
+.hero-l h5 {
+    font-size: 1vw;
 }
 
 .hero-l p {
+    width: 10vw;
     font-size: 10px;
     margin: 10px 0;
     opacity: 0.9;
@@ -69,12 +75,133 @@ body {
 }
 
 .hero-l .hero-l-wrapper {
-    width: 100%;
+    width: 10vw;
     height: 15vw;
-    background-color: red;
 }
 
 .hero-l-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-mid {
+    width: 30vw;
+    min-height: 42vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.imgntext {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-mid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-mid p {
+    font-size: 1.5vw;
+    letter-spacing: -0.5;
+    width: 50%;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.hero-headings {
+    position: absolute;
+    top: -15%;
+    left: -20%;
+}
+
+.hero-mid h1 {
+    letter-spacing: -0.4vw;
+    line-height: 0.8;
+    font-size: 6vw;
+    font-weight: 100;
+}
+
+.hero-r {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#circlev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    border: 1px solid #5e5e5e;
+}
+
+#circlev i {
+    color: #5e5e5e;
+}
+
+.hero-r h3 {
+    font-weight: 400;
+    color: #5e5e5e;
+}
+
+#motive {
+    margin-top: 7vw;
+    padding: 3vw 10vw;
+}
+
+#motive h3 {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: #494949;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+
+#motive .motive-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+#motive p {
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+    align-items: center;
+    line-height: 1.8;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+#motive span {
+    width: 4vw;
+    height: 2.5vw;
+    margin: 0 10px;
+    background-color: #494949;
+    border-radius: 100px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#motive .span2 {
+    display: inline-block;
+    width: 7vw;
+    height: 4vw;
+    margin: 0 10px;
+    background-color: #494949;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+#motive span img {
     width: 100%;
     height: 100%;
     object-fit: cover;
