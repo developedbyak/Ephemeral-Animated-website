@@ -258,3 +258,42 @@ body {
     height: 38vw;
     margin-bottom: 1vw;
 }
+
+#banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 10vw 3vw 0;
+    gap: 40px;
+}
+
+#bimg {
+    width: 65vw;
+    height: 60vh;
+}
+
+#bimg img {
+    width: 100%;
+    height: 100%;
+    object-position: 0% 70%;
+    object-fit: cover;
+}
+
+#btext {
+    width: 35%;
+    padding: 0 3vw;
+}
+
+#btext h1 {
+    font-size: 2.8vw;
+    font-weight: 400;
+    letter-spacing: -0.15vw;
+    line-height: 1;
+}
+
+#btext p {
+    margin-top: 20px;
+    width: 60%;
+    font-size: 1vw;
+}
