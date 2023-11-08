@@ -179,6 +179,7 @@ body {
     line-height: 1.8;
     justify-content: end;
     flex-wrap: wrap;
+    font-weight: 600;
 }
 
 #motive span {
@@ -205,4 +206,55 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#pictures {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 12vw 3vw 14vw;
+    margin-top: 4vw;
+    align-items: start;
+}
+
+#firstpic {
+    width: 17vw;
+}
+
+#secpic {
+    width: 23vw;
+    text-align: end;
+}
+
+#firstpic #picimg {
+    width: 100%;
+    height: 27vw;
+    margin-bottom: 1vw;
+}
+
+#picimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#pictures h1 {
+    letter-spacing: -0.1vw;
+    font-weight: 100;
+    font-size: 2vw;
+}
+
+#pictures p {
+    opacity: 0.8;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#secpic p {
+    padding-left: 9vw;
+}
+
+#secpic #picimg {
+    width: 100%;
+    height: 38vw;
+    margin-bottom: 1vw;
 }
