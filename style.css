@@ -318,7 +318,7 @@ body {
     overflow: hidden;
 }
 
-#future video {
+/* #future video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -326,13 +326,23 @@ body {
     width: 100%;
     height: 100%;
     opacity: 0;
+} */
+
+#future video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
 }
 
 #ftext {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 9999;
 }
 
