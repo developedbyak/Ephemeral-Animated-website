@@ -7,7 +7,7 @@ const scroll = new LocomotiveScroll({
 // loader
 document.addEventListener("DOMContentLoaded", function () {
     const loadingElement = document.getElementById("loading");
-    const numberElement = document.getElementById("percentage");
+    // const numberElement = document.getElementById("percentage");
 
     // Start the loader
     let currentNumber = 0;
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const intervalId = setInterval(() => {
         if (currentNumber < 100) {
             currentNumber++;
-            numberElement.textContent = currentNumber + "%";
+            // numberElement.textContent = currentNumber + "%";
         } else {
             clearInterval(intervalId);
             loadingElement.style.display = "none";
