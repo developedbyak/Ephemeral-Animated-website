@@ -14,14 +14,20 @@
 }
 
 #loading h1 {
-    font-size: 6vw;
+    font-size: 4vw;
     font-weight: 100;
     color: rgb(31, 31, 31);
     font-family: "Poppins", sans-serif;
+    opacity: 0;
 }
+
 #loading span {
     font-size: 6vw;
     font-weight: 100;
     color: rgb(31, 31, 31);
     font-family: "Poppins", sans-serif;
+}
+
+.sheryelem span {
+    display: inline-block;
 }

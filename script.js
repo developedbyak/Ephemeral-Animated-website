@@ -1,28 +1,60 @@
-// loco
+document.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+});
+
+// locomotive
 const scroll = new LocomotiveScroll({
     el: document.querySelector("#main"),
     smooth: true,
 });
 
+// textAnimate
+function textAnimate(element) {
+    var alltexts = document.querySelectorAll(element);
+    alltexts.forEach(function (elem) {
+        elem.textContent = elem.textContent.trim().replaceAll(" ", " ");
+        elem.classList.add("sheryelem");
+        var clutter = "";
+        elem.textContent.split("").forEach(function (char) {
+            clutter += `<span>${char}</span>`;
+        });
+        elem.innerHTML = clutter;
+    });
+    alltexts.forEach(function (elem) {
+        gsap.set("#loading h1", {
+            y: 10,
+            opacity: 1,
+        });
+        gsap.set("#loading h1 span", {
+            y: 10,
+            opacity: 0,
+        });
+        gsap.to(elem.childNodes, {
+            scrollTrigger: {
+                trigger: elem,
+                start: "top 80%",
+            },
+            y: 0,
+            stagger: 0.1,
+            opacity: 1,
+            delay: 0.3,
+            duration: 2,
+            ease: Expo.easeOut,
+        });
+    });
+}
+textAnimate("#loading h1");
 // loader
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = function () {
+    console.log("All assets are loaded. Rendering website...");
     const loadingElement = document.getElementById("loading");
-    // const numberElement = document.getElementById("percentage");
 
-    // Start the loader
-    let currentNumber = 0;
-
-    const intervalId = setInterval(() => {
-        if (currentNumber < 100) {
-            currentNumber++;
-            // numberElement.textContent = currentNumber + "%";
-        } else {
-            clearInterval(intervalId);
-            loadingElement.style.display = "none";
-            showAnimations();
-        }
-    }, 10);
-});
+    setTimeout(() => {
+        loadingElement.style.display = "none";
+        showAnimations();
+        console.log("triggered animations..");
+    }, 2800);
+};
 
 function showAnimations() {
     // gsap
