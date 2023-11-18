@@ -9,4 +9,12 @@ module.exports = merge(common, {
         path: path.resolve(__dirname, "dist"),
         assetModuleFilename: "assets/[hash][ext][query]",
     },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"],
+            },
+        ],
+    },
 });
