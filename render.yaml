@@ -1,4 +1,0 @@
-services:
-  - type: web
-    name: project-ephemeral
-    buildCommand: npm install && npm run build
