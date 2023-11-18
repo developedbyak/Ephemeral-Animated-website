@@ -1,6 +1,4 @@
-document.addEventListener("contextmenu", function (event) {
-    event.preventDefault();
-});
+import "./main.css";
 
 // locomotive
 const scroll = new LocomotiveScroll({

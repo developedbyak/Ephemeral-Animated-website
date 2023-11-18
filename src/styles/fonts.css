@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Nimbus Sans L";
+    src: url("../fonts/NimbusSanL-BolIta.woff2") format("woff2"),
+        url("../fonts/NimbusSanL-BolIta.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nimbus Sans L";
+    src: url("../fonts/NimbusSanL-RegIta.woff2") format("woff2"),
+        url("../fonts/NimbusSanL-RegIta.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nimbus Sans L";
+    src: url("../fonts/NimbusSanL-Reg.woff2") format("woff2"),
+        url("../fonts/NimbusSanL-Reg.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Nimbus Sans L";
+    src: url("../fonts/NimbusSanL-Bol.woff2") format("woff2"),
+        url("../fonts/NimbusSanL-Bol.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
