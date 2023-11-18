@@ -29,7 +29,7 @@ module.exports = merge(common, {
             }),
         ],
     },
-    devtool: "hidden-source-map",
+    devtool: "hidden-nosources-source-map",
     plugins: [
         new MiniCssExtractPlugin({
             filename: "[name].[contenthash].css",
